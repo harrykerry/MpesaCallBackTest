@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('confirmPayment',[MpesaController::class,'confirmPayment']);
+Route::post('validatePayment',[mpesaPaymentController::class,'validatePayment']);
