@@ -21,4 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('confirmPayment',[MpesaController::class,'confirmPayment']);
 Route::post('validatePayment',[MpesaController::class,'validatePayment']);
-Route::get('/simulate-c2b', [YourController::class, 'simulateC2B']);
+Route::get('/simulate-c2b', [MpesaController::class, 'simulateC2B']);
